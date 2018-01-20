@@ -10,4 +10,10 @@ public class HelloController {
     public String sayHay() {
         return "Hay";
     }
+
+    @RequestMapping("/hello-obj")
+    public Greeting sayHayObj() {
+        Greeting newGreeting = new Greeting("Test bicz", 12);
+        return newGreeting;
+    }
 }

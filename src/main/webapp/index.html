@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="mainCtrl" ng-cloak>
+
+<hr>
+<input ng-model="idk" placeholder="id"/>
+<input ng-model="name" placeholder="name"/>
+<input ng-model="desc" placeholder="desc"/>
+<button ng-click="sendPost()">SEND DATA</button>
+<hr>
+<button ng-click="sendGet()">GET DATA</button>
+<div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>description</th>
+        </tr>
+        <tr ng-repeat="topic in topics" ng-show="topics">
+            <td>{{topic.id}} </td>
+            <td>{{topic.name}} </td>
+            <td>{{topic.description}}</td>
+        </tr>
+    </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>
