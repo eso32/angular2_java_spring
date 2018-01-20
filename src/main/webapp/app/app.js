@@ -4,7 +4,7 @@ angular.module("myApp").controller("mainCtrl", function($scope, $http){
     $scope.idk;
     $scope.name;
     $scope.desc;
-    var baseURI = 'https://infinite-springs-25353.herokuapp.com/';
+    var baseURI = 'https://infinite-springs-25353.herokuapp.com/topics';
     var baseUR = 'http://localhost:8090/topics';
 
     $scope.sendGet = function(){
